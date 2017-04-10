@@ -544,6 +544,7 @@ static void LoadCommonPost(const md_game_info &ginfo)
   //printf("%f\n", (double)MDFNGameInfo->fps / 65536 / 256);
  }
 
+ 
  if(MDFN_GetSettingB("md.correct_aspect"))
  {
   MDFNGameInfo->nominal_width = 292;
@@ -555,6 +556,8 @@ static void LoadCommonPost(const md_game_info &ginfo)
   MDFNGameInfo->lcm_width = 320;
  }
 
+  
+ 
  MDFNGameInfo->lcm_height = MDFNGameInfo->nominal_height * 2;
 
  MDFNGameInfo->LayerNames = "BG0\0BG1\0OBJ\0";
